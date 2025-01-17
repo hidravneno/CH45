@@ -1,15 +1,78 @@
-main{
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para la distribución principal */
+main {
     display: flex;
     height: 100vh;
+    gap: 1rem;
 }
 
-#list{
-    background-color: aqua;       
+/* Sección de lista de tareas */
+#list {
+    background-color: #e9f7fa;
     flex: 6;
+    padding: 1rem;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
 }
 
-#form{
-    background-color: rgb(230, 225, 235);    
+/* Sección del formulario */
+#form {
+    background-color: #f3edf7;
     flex: 6;
+    padding: 2rem;
 }
-/* try to cover all the space of both sections */
+
+/* Estilos de las tarjetas */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.card-title {
+    font-weight: bold;
+    color: #333;
+}
+.card-text {
+    color: #666;
+}
+
+/* Estilos de los campos del formulario */
+.form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button#btnSave {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button#btnSave:hover {
+    background-color: #212529;
+}
+
+#list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#list::-webkit-scrollbar-thumb {
+    background-color: #6c757d;
+    border-radius: 10px;
+}
