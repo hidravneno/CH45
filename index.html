@@ -5,10 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Hello world</h1>
+
+    <main>
+        <section id="list">A</section>
+        <section id="form">
+            <div class="mt-3">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control" id="txtTitle">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">description</label>
+                <textarea rows="5" class="form-control" id="txtDescription"></textarea>
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Color</label>
+                <input type="color" class="form-control" id="selColor">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Start Date</label>
+                <input type="datetime-local" class="form-control" id="selDate">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Status</label>
+                <select class="form-control" id="selStatus">
+                    <option>New</option>
+                    <option>In progress</option>
+                    <option>Completed</option>
+                    <option>Cancel</option>
+                    </select>
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Budget</label>
+                <input type="number" class="form-control" id="numBudget">
+            </div>
+            <div class="mt-3">
+                <button id="btnSave" class="btn btn-dark">Save Task</button>
+            </div>
+
+
+            <!-- Create an input for this:
+             title
+             description
+             color
+             startDate
+             status
+             budget
+              -->
+              
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./scripts/app.js"> </script>
-    <script src="./scripts/snake.js"> </script>
+    
 </body>
-</html>
+</html>                                                         
